@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Delhi Patho</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Delhi Patho</h1>
+				<p>Find your online test report.</p>
+			</header>
+
+		<!-- Search Form -->
+			<form id="signup-form" method="POST" action="ans/">
+			{% csrf_token %}
+				<input type="text" name="id" id="id" placeholder="Report id" />
+				<input type="submit" value="Check" />
+			</form>
+
+		<!-- Footer 
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
