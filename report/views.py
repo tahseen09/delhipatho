@@ -11,7 +11,7 @@ def index(request):
         if form.is_valid():
             id=request.POST.get("id")
             ans = query.objects.get(id=id)
-            response=ans.repo
+            response=ans.repo.url
             if ans is None:
                 return redirect("index.html")
             else:
