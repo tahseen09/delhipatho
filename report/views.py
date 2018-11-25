@@ -20,4 +20,3 @@ def index(request):
     else:
         form = Form()
     return render(request,"index.html",{'form':form})
-
