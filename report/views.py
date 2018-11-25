@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, HttpResponse
 from . models import query
 import requests
-from django.http import FileResponse
+from django.http import FileResponse, HttpResponseRedirect
+from . forms import Form
 
 def func(request):
     if request.method=="POST":
@@ -11,7 +12,9 @@ def func(request):
         if ans is None:
             return redirect("index.html")
         else:
-            """return render (request,"ans.html",{'ans':response})"""
+            #return render (request,"ans.html",{'ans':response})
             return redirect(response)
+            
 def index(request):
-    return render(request,"index.html",{})
+    form = Form
+    return render(request,"index.html",{'form':form})

@@ -18,7 +18,7 @@
 		<!-- Search Form -->
 			<form id="signup-form" method="POST" action="ans/">
 			{% csrf_token %}
-				<input type="text" name="id" id="id" placeholder="Report id" />
+				{{form}}
 				<input type="submit" value="Check" />
 			</form>
 
