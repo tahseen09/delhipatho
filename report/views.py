@@ -15,7 +15,6 @@ def index(request):
             if ans is None:
                 return redirect("index.html")
             else:
-                #return render (request,"ans.html",{'ans':response})
                 return redirect(response)
     else:
         form = Form()
