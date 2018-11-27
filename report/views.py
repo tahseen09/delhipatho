@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse, get_object_or_404
 from . models import query
-import requests
 from django.http import FileResponse, HttpResponseRedirect
 from . forms import Form
 
