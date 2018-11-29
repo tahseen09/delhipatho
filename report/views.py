@@ -15,7 +15,3 @@ def index(request):
     else:
         form = Form()
     return render(request,"index.html",{'form':form})
-
-def error_404_view(request, exception):
-    data = {}
-    return render(request,'404.html', data)
