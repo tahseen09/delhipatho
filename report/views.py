@@ -17,5 +17,5 @@ def index(request):
     return render(request,"index.html",{'form':form})
 
 def error_404_view(request, exception):
-    data = {"name": "tahseen09.pythonanywhere.com"}
+    data = {}
     return render(request,'404.html', data)
