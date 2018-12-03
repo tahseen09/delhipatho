@@ -7,4 +7,4 @@ If you already have it installed, clone this project and go into the directory w
 Use the command "python manage.py migrate" without quotes.<br>
 Use the command "python manage.py makemigrations" without quotes.<br>
 To run the server use "python manage.py runserver" without quotes and if no error shows go to the url "localhost" in your browser. and it should load up. <br>
-Cheers. Suggestions and contributions are Welcomed. 
+Cheers. Suggestions and Contributions are Welcome.  
