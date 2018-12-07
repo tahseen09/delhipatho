@@ -10,8 +10,8 @@ def index(request):
         if form.is_valid():
             id=request.POST.get("id")
             ans = get_object_or_404(query, id=id)
-            response=ans.repo.url
-            return redirect(response)
+            #response=ans.repo1.url
+            return render(request,"ans.html",{'ans':ans})
     else:
         form = Form()
     return render(request,"index.html",{'form':form})

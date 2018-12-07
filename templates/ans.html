@@ -1,5 +1,13 @@
 <html>
 <body>
-<p><a href="{{ans}}">Download</p>
+{% if ans.repo1 %}
+    <p><a href="{{ans.repo1.url}}">Download {{ans.name1}}</p>
+{% endif %}
+{% if ans.repo2 %}
+    <p><a href="{{ans.repo2.url}}">Download {{ans.name2}}</p>
+{% endif %}
+{% if ans.repo3 %}
+    <p><a href="{{ans.repo1.url}}">Download {{ans.name3}}</p>
+{% endif %}
 </body>
 </html>
